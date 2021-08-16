@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "cities",
+  "version": "${version}",
+  "name": "Cities",
+  "description": "",
+  "authors": [
+    "salversij"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cities/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "salversij.cities.client.CitiesClient"
+    ],
+    "main": [
+      "salversij.cities.Cities"
+    ]
+  },
+  "mixins": [
+    "cities.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
